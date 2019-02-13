@@ -83,7 +83,11 @@ header .current a {
     color: #e8491d;
     font-weight: bold;
 }
-
+header #branding {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
 header a:hover {
     color: #cccccc;
     font-weight: bold;
@@ -201,12 +205,13 @@ footer{
         text-align: center;
         width: 100%;
     }
+    
     header nav li{
         padding: 0 10px 0 10px;
     }
     header {
         padding-bottom: 20px;
-        position: static;
+        
     }
 
     #showcase h1 {
