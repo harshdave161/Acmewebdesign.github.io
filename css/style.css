@@ -177,6 +177,7 @@ aside#sidebar .quote .textArea{
     background-color: rgb(0, 255, 0);
     color: black;
 }
+
 footer{
     background-color: #e8491d;
     text-align: center;
@@ -215,7 +216,9 @@ footer{
         display: block;
         width: 100%;
     }
-
+    #showcase .sm{
+        font-size: 45px;
+    }
     #newsletter form input[type="email"],
     .quote input,
     .quote textarea {
