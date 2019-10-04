@@ -50,6 +50,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 
 header a {
@@ -190,6 +191,83 @@ footer{
     margin-top:  20px;
 }
 
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form > input{
+    color: white;
+    width:60%;
+    height: 5vh;
+    background: #9ad6c7;
+    border:none;
+    border-radius: 5px;
+    color: #24252a;
+    position: relative;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 19px
+}
+form > label{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+form >select{
+    width: 40%;
+    padding: 8px 20px;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgb(136, 243, 184);
+    font-size: 19px;
+    outline:none;
+
+}
+form> #btn-n{
+    padding: 20px;
+    display: block;
+    height: 20%;
+    width: 50%;
+    transform: translate(50%);
+    border-radius: 10px;
+    background: #ecdbdb;
+    color: #24252a;
+}
+#btn-n{
+    display: inline-block;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border:none;
+    border-radius: 5px;
+    margin: 0.5em 0;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 18px;
+    transition: all 1s;
+}
+#btn-n:hover{
+background: #eaeaea;
+color:#333;
+}
+#main > .bg-images{
+    position: absolute;
+   /* background: rgb(211, 152, 152) url('https://cdn.pixabay.com/photo/2019/10/01/01/22/flower-4516998_960_720.jpg');
+    */
+    background: linear-gradient(45deg,#f0c27b,#4b1248);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: .7;
+}
+
 /* Media Queries */
 @media(max-width: 768px) {
 
@@ -232,4 +310,44 @@ footer{
         width: 100%;
         margin-bottom: 5px;
     }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+form > input{
+    width:100%;
+    background: #9ad6c7;
+    border:none;
+    border-radius: 5px;
+    color: #24252a;
+    position: relative;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 19px
+}
+form > label{
+    font-size: 23px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+form >select{
+    width: 80%;
+    padding: 8px 20px;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgb(214, 144, 144);
+    font-size: 19px;
+    outline:none;
+
+}
+#main > .bg-images{
+    display: none;
+}
+#main{
+    background: linear-gradient(#f0c27b,#4b1248);
+}
 }
